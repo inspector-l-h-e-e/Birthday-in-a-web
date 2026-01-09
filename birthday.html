@@ -18,7 +18,7 @@
         }
         body {
             scroll-behavior: smooth;
-            background-color:  firebrick;
+            background-color:  black;
             color: #f0f0f0;
         }
         .reveal {
@@ -32,7 +32,8 @@
   transform: translateY(0);
 }
 .love {
-    margin: 0 10px;
+    height: 100vh;
+    padding: 10px;
 }
 .pictures {
     gap: 5px;
@@ -92,11 +93,9 @@ li {
     font-size: 1.5rem;
     font-family: "Space Grotesk", sans-serif;
 }
-.footer {
-    margin-top: 80px;
-    padding-bottom: 0;
-}
-.footer p {
+
+footer {
+    opacity: 0.5;
     text-align: right;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.3rem;
@@ -119,7 +118,7 @@ li {
         object-fit: cover;
     }
     p{font-size: 0.9rem;}
-    .footer p {font-size: 0.8rem; margin-bottom: 80px;}
+    footer {font-size: 0.8rem; margin-bottom: 80px;}
     h2{font-size: 1.5rem;}
     li {font-size: 1rem;}
     #type {font-size: 1.1rem;}
@@ -188,8 +187,8 @@ li {
 I wish you peace, growth, answered prayers, and a future that makes you proud of yourself.</p>
       
     </section>
-    <footer class="footer">
-        <p>Designed with love, by Inspectorlhee❤️</p>
+    <footer>
+        Designed with love, by Inspectorlhee❤️
     </footer>
     <script>
   const reveals = document.querySelectorAll('.reveal');
