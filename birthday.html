@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Trocchi&display=swap" rel="stylesheet">
+    <style>
+        * {
+            width: auto;
+            max-width: auto;
+            box-sizing: border-box;
+        }
+        body {
+            scroll-behavior: smooth;
+            background-color:  firebrick;
+            color: #f0f0f0;
+        }
+        .reveal {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.love {
+    margin: 0 10px;
+}
+.pictures {
+    gap: 5px;
+    padding: 0;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+img { 
+    margin-top: 30px;
+    padding-bottom: 0;
+    height: 300px;
+    border-radius: 50px;
+    width: fit-content;
+    align-items: center;
+}
+.pic {
+    padding: 0;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.text {
+    padding-top: 0;
+    text-align: center;
+    font-size: 1rem;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+}
+h2 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+p {
+    font-size: 1.5rem;
+    font-family: "Space Grotesk", sans-serif;
+}
+#re {
+    font-style: italic;
+    font-size: 1.4rem;
+    font-weight: 300;
+    font-family: "Space Grotesk", sans-serif;
+}
+li {
+    font-family: 200;
+    font-size: 1.2rem;
+    font-family: "Trocchi", serif;
+}
+#type {
+    text-align: center;
+    font-style: italic;
+    font-weight: 100;
+    opacity: 0.7;
+    font-size: 1.5rem;
+    font-family: "Space Grotesk", sans-serif;
+}
+.footer {
+    margin-top: 80px;
+    padding-bottom: 0;
+}
+.footer p {
+    text-align: right;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    opacity: 1;
+}
+@media (max-width: 680px) {
+    .love {
+        align-items: center;
+        font-size: 1.5rem;
+    }
+    .pictures {
+        grid-template-columns: 1fr;
+    }
+    img {
+        height: auto;
+        display: block;
+        padding: 0 10px;
+        width: 100%;
+        max-height: 70vh;
+        object-fit: cover;
+    }
+    p{font-size: 0.9rem;}
+    .footer p {font-size: 0.8rem; margin-bottom: 80px;}
+    h2{font-size: 1.5rem;}
+    li {font-size: 1rem;}
+    #type {font-size: 1.1rem;}
+    .text{font-size: 1.1rem; padding: 0 10px;}
+    #re{font-size: 1rem;}
+}
+
+    </style>
+</head>
+<body>
+    <section class="love">
+        <h2>❤️Happy Birthday, My Favorite Person🎈</h2>
+        <p>This page isn't just a gift, it's a reminder of how special you are to me.</p>
+    <section class="likes">
+        <h2>Why You Matters To Me⚛️</h2>
+        <ul>
+            <li class="reveal">You believe in me</li>
+            <li class="reveal">You listen without judging</li>
+            <li class="reveal">You make me want to be better</li>
+            <li class="reveal">You feel safe</li> 
+        </ul>
+        <p class="reveal" id="re">We've met just once...but that day mattered more than you know.<br> One meeting, sweet kisses. A thousand feelings i didn't expect.🌹😍🤩💋🥰</p>
+      <h2>My Promise To You🤞</h2>
+      <ul>  
+      <li class="reveal">I'll respect your pace</li>
+      <li class="reveal">I'll grow, not just talk</li>
+      <li class="reveal">I'll listen, even when it's hard</li>
+      <li class="reveal">I'll keep choosing progress</li>
+      <li class="reveal">I'll show up not disappear</li>
+      </ul>
+      <h2>Things I Love About You💝</h2>
+      <ul>
+      <li class="reveal">Your patience with my growth, not just my results</li>
+      <li class="reveal">Your loyalty...it feels safe!!! Don't change.</li>
+      <li class="reveal">Your honesty, even when it's not easy</li>
+      <li class="reveal">The way you motivate me by just being yourself</li>
+       <li class="reveal">The calm you bring into my life</li>
+      <li class="reveal">The care you put into litle conversations</li>
+      </ul>
+      <h2 style="text-align: center;">My Favorite Pictures Of You😍</h2>
+      <div class="pictures">
+        <div class="pic">
+         <img src="img1.jpeg" alt="girland her mom">
+         <p class="text">This is to thank your mom👩‍🍼 for the love and values she poured into you.
+        They are felt and appreciated more than words can say.❤️</p>
+        </div>
+        <div class="pic">
+         <img src="img6.jpeg" alt="girland her mom">
+         <p class="text">A beautiful beginning.👶🌹</p>
+        </div>
+        <div class="pic">
+         <img src="img3.jpeg" alt="girland her mom">
+         <p class="text">There is something about the way you sit so calmly...feels amazing.⌛🍖</p>
+        </div>
+        <div class="pic">
+         <img src="img2.jpeg" alt="girland her mom">
+         <p class="text">Radiance.🌹🌹🌹🌹</p>
+        </div>
+        <div class="pic">
+         <img src="img5.jpeg" alt="girland her mom">
+         <p class="text">The smile you try to cover is one of my favorite thing.😊❤️</p>
+        </div>
+      </div>
+      <p style="font-size: 1.2rem;">PS: I love all pictures of you.</p>
+      <p id="type">On your birthday, I don’t just wish you happiness.
+I wish you peace, growth, answered prayers, and a future that makes you proud of yourself.</p>
+      
+    </section>
+    <footer class="footer">
+        <p>Designed with love, by Inspectorlhee❤️</p>
+    </footer>
+    <script>
+  const reveals = document.querySelectorAll('.reveal');
+
+  reveals.forEach((el, i) => {
+    setTimeout(() => {
+      el.classList.add('active');
+    }, i * 400); // delay between lines
+  });
+
+  function typeWriter(element, text, speed = 40) {
+  let i = 0;
+  element.innerHTML = "";
+
+  function type() {
+    if (i < text.length) {
+      element.innerHTML += text.charAt(i);
+      i++;
+      setTimeout(type, speed);
+    }
+  }
+
+  type();
+}
+
+const text = " On your birthday, I don’t just wish you happiness. I wish you peace, growth, answered prayers, and a future that makes you proud of yourself.🤞🙏🏽🥹 ";
+const el = document.getElementById("type");
+
+typeWriter(el, text);
+
+</script>
+</body>
+</html>
